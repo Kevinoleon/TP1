@@ -29,12 +29,12 @@ public class Entrada {
     public String Q="";
     
     public Entrada(){
-        this.m=2000;
-        this.n=2000;
+        this.m=3;
+        this.n=3;
         
         //this.gen_h(n);
         entrada=n+"\r\n\r\n"+this.gen_e(n,m)+"\r\n"+m+"\r\n\r\n"+this.gen_h(n,m)+"\r\n"+this.gen_q(m)+"\r\n";
-        //crearchivo(entrada);
+        crearchivo(entrada);
     }
     public void crearchivo(String entrada){
        this.entrada=entrada;

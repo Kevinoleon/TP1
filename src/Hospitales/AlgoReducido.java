@@ -110,8 +110,8 @@ public class AlgoReducido {
             }
         }
         
-        int[] parejas=AlgoritmoComp.emparejar(E, H);
-        AlgoritmoComp.mostrarEmparejamiento(H, parejas);
+        int[] parejas=Algoritmo.emparejar(E, H);
+        Algoritmo.mostrarEmparejamiento(H, parejas);
     
                
         
