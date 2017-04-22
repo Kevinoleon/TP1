@@ -13,7 +13,7 @@ import java.util.Random;
  *
  * @author kevin_000
  */
-public class Algoritmo {
+public class AlgoritmoBasico {
     public static int[] emparejar(int[][] MM, int[][] MH) {
         int M;
         int h;

@@ -29,8 +29,8 @@ public class Entrada {
     public String Q="";
     
     public Entrada(){
-        this.m=3;
-        this.n=3;
+        this.m=5;
+        this.n=5;
         
         //this.gen_h(n);
         entrada=n+"\r\n\r\n"+this.gen_e(n,m)+"\r\n"+m+"\r\n\r\n"+this.gen_h(n,m)+"\r\n"+this.gen_q(m)+"\r\n";

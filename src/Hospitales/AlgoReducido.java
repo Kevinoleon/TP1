@@ -14,7 +14,9 @@ public class AlgoReducido {
     
     public int[] Q;
     public int[][]H;
+    public int[][]Hosp;
     public int[][] E;
+    public int[][] Est;
     
     public static int[][] hosp_Homb(int[][] M, int[] Q){
         //se busca contar la cantidad de filas que tendrá la nueva matriz,
@@ -109,9 +111,12 @@ public class AlgoReducido {
                 E[i][j]= Integer.parseInt(in.E.get(i).get(j));
             }
         }
+        Hosp=hosp_Homb(H, Q);
+        Est=Res_Muj(E, Q);
         
-        int[] parejas=Algoritmo.emparejar(E, H);
-        Algoritmo.mostrarEmparejamiento(H, parejas);
+        
+        int[] parejas=AlgListasIncompletas.emparejar(Est, Hosp);
+        AlgListasIncompletas.mostrarEmparejamiento(Est, parejas);
     
                
         
